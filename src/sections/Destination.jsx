@@ -54,6 +54,7 @@ const destinations = [
   },
 ]
 
+
 export default function Component() {
   const [currentPage, setCurrentPage] = useState(0)
   const destinationsPerPage = 3
@@ -73,7 +74,7 @@ export default function Component() {
   )
 
   return (
-    <div className="w-full max-w-[1184px] mx-auto p-4 sm:p-6 md:p-8 lg:p-[67px]">
+    <div className="w-full max-w-[85rem] mx-auto p-4 sm:p-6 md:p-8 lg:p-[67px]">
       {/* top section */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8">
         {/* heading section */}
@@ -83,37 +84,37 @@ export default function Component() {
         </div>
 
         {/* arrow section */}
-        <div className="flex gap-4">
+        <div className="flex justify-between sm:justify-center w-full sm:w-auto gap-4">
           {/* Back Arrow */}
           <button 
             onClick={handlePrevious}
-            className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-[100px] lg:h-[100px] rounded-full bg-gray-200 flex justify-center items-center transition-colors hover:bg-gray-300" 
+            className="w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-[80px] lg:h-[80px] rounded-full bg-gray-200 flex justify-center items-center transition-colors hover:bg-gray-300" 
             aria-label="Previous destination"
           >
-            <IoIosArrowRoundBack className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-gray-600" />
+            <IoIosArrowRoundBack className="w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-10 lg:h-10 text-gray-600" />
           </button>
 
           {/* Forward Arrow */}
           <button 
             onClick={handleNext}
-            className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-[100px] lg:h-[100px] rounded-full bg-indigo-600 flex justify-center items-center transition-colors hover:bg-indigo-700" 
+            className="w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-[80px] lg:h-[80px] rounded-full bg-indigo-600 flex justify-center items-center transition-colors hover:bg-indigo-700" 
             aria-label="Next destination"
           >
-            <IoIosArrowRoundForward className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-white" />
+            <IoIosArrowRoundForward className="w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-10 lg:h-10 text-white" />
           </button>
         </div>
       </div>
 
       {/* card section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-6">
         {currentDestinations.map((destination) => (
           <div key={destination.id} className="bg-white rounded-lg overflow-hidden shadow-lg">
             {/* card img section */}
-            <div className="w-full h-48 sm:h-64 md:h-[350px]">
+            <div className="w-full h-48 sm:h-56 md:h-52 lg:h-[350px]">
               <img src={destination.image} alt={destination.title} className="w-full h-full object-cover" />
             </div>
             <div className="p-4">
-                <div className="flex flex-col gap-4 px-2 ">
+                <div className="flex flex-col gap-4 p-2">
                 <div className="flex justify-between items-start mb-2">
                 <div className="w-[223px]">
                 <h3 className="text-lg font-bold">{destination.title}</h3>
@@ -123,12 +124,9 @@ export default function Component() {
               <p className="text-gray-600 mb-2">{destination.location}</p>
                 </div>
              
-
-              <div className="flex items-center gap-2 px-2">
+              <div className="flex items-center gap-2 p-2">
               <span className="ml-1 text-orange-500 font-bold text-xl">{destination.rating} </span>
                 <FaStar className="w-5 h-5 text-orange-500" aria-hidden="true" />
-                
-               
               </div>
             </div>
           </div>

@@ -3,17 +3,17 @@ import { travelSection } from '../assets/images'
 
 const TravelPoint = () => {
     return (
-        <div className='w-full max-w-[82rem] mx-auto px-4 lg:px-0 py-8 lg:py-16 ml-0'>
-            <div className='flex flex-col md:flex-col lg:flex-row items-center'>
+        <div className='w-full max-w-[82rem] mx-auto px-4 sm:px-8 md:px-16 lg:px-0 py-8 md:py-16 lg:py-16'>
+            <div className='flex flex-col md:flex-col lg:flex-row items-center lg:items-start'>
                 {/* Image div */}
                 <div className="w-full sm:w-[24.875rem] md:w-[54.4375rem] lg:w-auto mb-16 md:mb-16 lg:mb-0">
-                    <img src={travelSection} width={871} height={697} alt="" className="w-full h-auto sm:h-[19.90625rem] md:h-[43.5625rem]" />
+                    <img src={travelSection} width={871} height={697} alt="" className="w-full h-auto sm:h-[19.90625rem] md:h-[43.5625rem] object-cover" />
                 </div>
 
                 {/* main content */}
-                <div className="flex flex-col gap-8 md:gap-16 lg:gap-16 w-full sm:w-[24.875rem] md:w-[52rem] lg:w-[27.5625rem] lg:h-[41.6875rem] lg:mt-7">
+                <div className="flex flex-col gap-8 md:gap-16 lg:gap-16 w-full sm:w-[24.875rem] md:w-[52rem] lg:w-[27.5625rem] lg:h-[41.6875rem] lg:mt-7 lg:ml-0">
                     {/* content div */}
-                    <div className="flex flex-col gap-8 md:gap-8 lg:gap-6 mb-8">
+                    <div className="flex flex-col gap-8 md:gap-8 lg:gap-6 mb-8 items-center text-center sm:items-center sm:text-center md:items-center md:text-center lg:items-start lg:text-left">
                         <h1 className='font-mono text-pink-600 font-bold text-xl'>TRAVEL POINT</h1>
                         <h3 className="text-3xl md:text-4xl font-bold">We helping you find your dream location</h3>
                         <p className="text-gray-400">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
@@ -39,4 +39,4 @@ const TravelPoint = () => {
     )
 }
 
-export default TravelPoint
+export default TravelPoint;

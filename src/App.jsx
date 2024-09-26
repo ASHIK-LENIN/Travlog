@@ -5,12 +5,16 @@ import KeySection from './sections/keySection'
 import TravelPoint from './sections/TravelPoint'
 import TopDestination from './sections/Destination'
 import Hero from './sections/Hero'
+import BookingLogo from './sections/BookingLogo'
+import Services from './sections/Services'
 
 const App = () => {
   return (
     <div className=''>
       <Navbar />
       <Hero />
+      <BookingLogo />
+      <Services />
       <TopDestination />
       <TravelPoint />
       <KeySection />
