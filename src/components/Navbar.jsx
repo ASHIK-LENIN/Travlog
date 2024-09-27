@@ -22,7 +22,7 @@ const Navbar = () => {
 
         {/* Nav links - hidden on small screens, visible from medium up */}
         <div className="hidden lg:flex items-center justify-center flex-grow order-3 mt-4 lg:mt-0">
-          <div className="text-sm gap-8 text-gray-500 flex">
+          <div className="text-md font-bold gap-8 text-gray-500 flex ">
             <NavLink to="/" className="hover:text-gray-900">Home</NavLink>
             <NavLink to="/discover" className="hover:text-gray-900">Discover</NavLink>
             <NavLink to="/deals" className="hover:text-gray-900">Special Deals</NavLink>
@@ -31,7 +31,7 @@ const Navbar = () => {
         </div>
 
         {/* Button div - hidden on small screens, visible from medium up */}
-        <div className="hidden md:flex items-center gap-4 order-4">
+        <div className="hidden md:flex items-center gap-4 order-4 text-md font-bold">
           <button className="px-6 py-2 rounded-full shadow-lg hover:bg-gray-100 transition-colors">Log In</button>
           <button className="px-6 py-2 rounded-full text-white bg-violet-700 hover:bg-violet-800 transition-colors">Sign Up</button>
         </div>
