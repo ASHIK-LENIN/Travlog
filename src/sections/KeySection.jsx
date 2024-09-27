@@ -1,6 +1,6 @@
 import React from 'react'
 import { Calcon, DisIcon, LocIcon } from "../assets/icons"
-import { keysection } from "../assets/images"
+import { key } from "../assets/images"
 
 const KeySection = () => {
   return (
@@ -8,7 +8,7 @@ const KeySection = () => {
       <div className="flex flex-col lg:flex-row lg:gap-[70px]">
         {/* Image section */}
         <div className="w-full lg:w-1/2 mb-8 lg:mb-0 order-1 lg:order-2">
-          <img src={keysection} alt="keyImage" className="w-full" />
+          <img src={key} alt="keyImage" className="w-full" />
         </div>
 
         {/* Content section */}

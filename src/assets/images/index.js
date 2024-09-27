@@ -1,4 +1,4 @@
-import keysection from './keysection.png';
+import key from './key.png';
 import travelSection from './travelPoint.png';
 import Img1 from './img1.jpg';
 import Img2 from './img2.jpg';
@@ -10,7 +10,7 @@ import HeroImg from './heroImg.png';
 
 
 export {
-    keysection,
+    key,
     travelSection,
     Img1,
     Img2,
